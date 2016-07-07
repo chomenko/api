@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "name": 12,
+      "orderBy": "name:desc"
+    },
+    "expected": {
+      "filter": {
+        "name": 12
+      },
+      "orderBy": "name desc"
+    }
+  },
+  {
+    "input": {
+      "name": "abs",
+      "invalid_1": "asd",
+      "orderBy": "name:desc|kokos:asc"
+    },
+    "expected": {
+      "filter": {
+        "name": "abs"
+      },
+      "orderBy": [
+        "name desc",
+        "kokos asc"
+      ]
+    }
+  }
+]
