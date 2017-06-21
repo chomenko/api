@@ -1,6 +1,6 @@
 <?php
 
-namespace Pilulka\Api\Tranformer;
+namespace Pilulka\Api\Transformer;
 
 class CollectionTransformer extends AbstractTransformer
 {
