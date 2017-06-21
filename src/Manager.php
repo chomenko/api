@@ -4,7 +4,7 @@ namespace Pilulka\Api;
 
 use Pilulka\Api\Response\AbstractResponse;
 use Pilulka\Api\Response\JsonResponse;
-use Pilulka\Api\Tranformer\AbstractTransformer;
+use Pilulka\Api\Transformer\AbstractTransformer;
 
 abstract class Manager
 {
