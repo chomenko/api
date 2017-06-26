@@ -29,9 +29,15 @@ abstract class Manager
         $this->startup();
     }
 
-    abstract public function findOne($id);
+    public function findOne($id)
+    {
+        $this->throwNotImplemented('create');
+    }
 
-    abstract public function findMany(array $params);
+    public function findMany(array $params)
+    {
+        $this->throwNotImplemented('create');
+    }
 
     public function renderResponse()
     {
