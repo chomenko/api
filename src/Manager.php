@@ -105,7 +105,7 @@ abstract class Manager
         $this->responseRender = $responseRender;
     }
 
-    private function throwNotImplemented($method)
+    protected function throwNotImplemented($method)
     {
         throw new ApiException("You have to implement `{$method} before use.`");
     }
