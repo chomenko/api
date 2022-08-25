@@ -39,10 +39,11 @@ abstract class Manager
         $this->throwNotImplemented('create');
     }
 
-    public function renderResponse()
+    public function renderResponse(): mixed
     {
         $this->responseRender->setData($this->responseData);
         $this->responseRender->render();
+        return null;
     }
 
     public function create(array $input)
